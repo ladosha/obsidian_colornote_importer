@@ -1,0 +1,25 @@
+{
+  "name": "colornote-importer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Import notes from an encrypted ColorNote backup file into Markdown notes, including checklists and locked notes. Everything runs locally.",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p test",
+    "test": "node scripts/test.mjs",
+    "lint": "eslint .",
+    "release": "node scripts/release.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "esbuild": "0.28.2",
+    "eslint": "9.39.5",
+    "eslint-plugin-obsidianmd": "0.5.1",
+    "obsidian": "1.14.4",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.2"
+  }
+}

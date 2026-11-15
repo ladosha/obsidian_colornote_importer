@@ -1,0 +1,39 @@
+.colornote-importer-file-input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.colornote-importer-error {
+	color: var(--text-error);
+	margin: var(--size-4-2) 0;
+}
+
+.colornote-importer-warning {
+	color: var(--text-warning);
+}
+
+.colornote-importer-summary p {
+	margin: 0 0 var(--size-4-2);
+}
+
+.colornote-importer-summary ul {
+	margin: 0 0 var(--size-4-3);
+	padding-inline-start: var(--size-4-6);
+}
+
+.colornote-importer-will {
+	font-weight: var(--font-semibold);
+	margin: var(--size-4-3) 0 0;
+}
+
+.colornote-importer-failures {
+	max-height: 12em;
+	overflow-y: auto;
+	padding-inline-start: var(--size-4-6);
+	user-select: text;
+	-webkit-user-select: text;
+}

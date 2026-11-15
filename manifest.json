@@ -1,0 +1,10 @@
+{
+  "id": "colornote-importer",
+  "name": "ColorNote Importer",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.10",
+  "description": "Import notes from an encrypted ColorNote backup file into Markdown notes, including checklists and locked notes. Everything runs locally.",
+  "author": "Vladislav Dashtu",
+  "authorUrl": "https://github.com/ladosha",
+  "isDesktopOnly": false
+}
