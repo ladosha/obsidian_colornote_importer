@@ -9,7 +9,7 @@ Import your notes from an encrypted [ColorNote](https://www.colornote.com/) back
 - **Locked notes included.** Notes you locked in ColorNote are unlocked, imported, and marked with a `locked: true` property.
 - **Checklists become task lists.** `[ ] item` becomes `- [ ] item`, and `[V] item` becomes `- [x] item`.
 - **Keeps the metadata as properties:** created and modified dates, color, checked state, reminders, and the note's ColorNote ID and UUID.
-- **Reminders keep working.** Time alarms, all-day reminders, notes pinned to the status bar, and every repeat rule are written in the format of the Note Pin plugin, which sends them in Obsidian and on Android. See [Reminders and Note Pin](#reminders-and-note-pin).
+- **Reminders keep working.** Time alarms, all-day reminders, notes pinned to the status bar, and every repeat rule are written in the format of the [Note Pin](https://github.com/ladosha/obsidian_note_pin_plugin) plugin, which sends them in Obsidian and on Android. See [Reminders and Note Pin](#reminders-and-note-pin).
 - **Keeps the original dates** as the files' created and modified times.
 - **Readable file names.** Each note is named after its title. Characters that file systems or links don't allow are replaced, and the original title is kept as an alias.
 - **Safe to run again.** Notes already in your vault are recognized by their ColorNote UUID and skipped, even if you've moved, renamed or edited them. Import a newer backup to bring in only the new notes.

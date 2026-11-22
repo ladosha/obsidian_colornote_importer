@@ -3,7 +3,7 @@
 // version; package.json is private and just kept in step with it.
 //
 //   npm run release -- 1.3.0          edit the files, build, commit, tag
-//   npm run release -- 1.3.0 --push   ...and push main and the tag
+//   npm run release -- 1.3.0 --push   ...and push master and the tag
 //
 // The commit message opens in $EDITOR prefilled with "Bump to <version>", so
 // the body can describe what changed. Pass --no-edit to keep just that line.
@@ -35,16 +35,16 @@ const [version] = args.filter((a) => !a.startsWith("--"));
 if (!version) die("usage: npm run release -- <version> [--push] [--no-edit]");
 if (!/^\d+\.\d+\.\d+$/.test(version)) die(`"${version}" is not a x.y.z version`);
 
-// A dirty tree or a stale main would tag something other than what was built.
+// A dirty tree or a stale master would tag something other than what was built.
 if (git("status", "--porcelain")) die("working tree is not clean");
-if (git("rev-parse", "--abbrev-ref", "HEAD") !== "main") die("not on main");
-git("fetch", "origin", "main", "--tags");
-// Being ahead of origin/main is the normal state just before a release; being
+if (git("rev-parse", "--abbrev-ref", "HEAD") !== "master") die("not on master");
+git("fetch", "origin", "master", "--tags");
+// Being ahead of origin/master is the normal state just before a release; being
 // behind or diverged would tag a tree that is missing what is already pushed.
 try {
-  git("merge-base", "--is-ancestor", "origin/main", "HEAD");
+  git("merge-base", "--is-ancestor", "origin/master", "HEAD");
 } catch {
-  die("main is behind or has diverged from origin/main; pull first");
+  die("master is behind or has diverged from origin/master; pull first");
 }
 if (git("tag", "--list", version)) die(`tag ${version} already exists`);
 
@@ -85,9 +85,9 @@ run("git", "commit", ...(edit ? ["-e"] : []), "-m", `Bump to ${version}`);
 git("tag", version);
 
 if (push) {
-  run("git", "push", "origin", "main", version);
+  run("git", "push", "origin", "master", version);
   console.log(`\nPushed ${version}. The Release workflow builds it now.`);
 } else {
   console.log(`\nCommitted and tagged ${version}. To publish:`);
-  console.log(`  git push origin main ${version}`);
+  console.log(`  git push origin master ${version}`);
 }
