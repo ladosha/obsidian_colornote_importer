@@ -6,5 +6,6 @@
   "description": "Import notes from an encrypted ColorNote backup file into Markdown notes, including checklists and locked notes. Everything runs locally.",
   "author": "Vladislav Dashtu",
   "authorUrl": "https://github.com/ladosha",
+  "fundingUrl": "https://ko-fi.com/vladmas",
   "isDesktopOnly": false
 }

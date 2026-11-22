@@ -79,8 +79,7 @@ This note's file is `Trip- Rome-Florence.md`. The `:` and `/` aren't allowed in 
 
 ## Reminders and Note Pin
 
-<!-- TODO: link Note Pin to its Community plugins page once it's published. -->
-Reminders are written in the format of **Note Pin**, a plugin that colors notes, pins them to the top and sends reminders that repeat. On Android, its companion app sends reminders on time even while Obsidian is closed, and pins notes to the notification bar, as ColorNote does. With Note Pin installed, your ColorNote reminders keep working in Obsidian.
+Reminders are written in the format of [**Note Pin**](https://github.com/ladosha/obsidian_note_pin_plugin), a plugin that colors notes, pins them to the top and sends reminders that repeat. On Android, its companion app sends reminders on time even while Obsidian is closed, and pins notes to the notification bar, as ColorNote does. With Note Pin installed, your ColorNote reminders keep working in Obsidian.
 
 Every reminder option ColorNote has is imported:
 
@@ -160,11 +159,11 @@ The plugin has no third-party runtime dependencies. AES and SHA-256 come from th
 
 **From Community plugins:** in Obsidian, open **Settings → Community plugins → Browse**, search for "ColorNote Importer", then install and enable it.
 
-**With BRAT, for beta versions:** in [BRAT](https://github.com/TfTHacker/obsidian42-brat), add `ladosha/obsidian-colornote-importer`.
+**With BRAT, for beta versions:** in [BRAT](https://github.com/TfTHacker/obsidian42-brat), add `ladosha/obsidian_colornote_importer`.
 
 **Manually:**
 
-1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/ladosha/obsidian-colornote-importer/releases/latest).
+1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/ladosha/obsidian_colornote_importer/releases/latest).
 2. Put them in `<vault>/.obsidian/plugins/colornote-importer/`.
 3. Enable the plugin in **Settings → Community plugins**.
 
@@ -180,6 +179,12 @@ npm run build      # production build
 ```
 
 The tests use synthetic backups in [`test/fixtures`](test/fixtures). They contain no real notes.
+
+## Support
+
+Made by [vladmas](https://vladmas.com). If you like this plugin, you can support me on Ko-fi:
+
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/vladmas)
 
 ## Disclaimer
 
