@@ -2,6 +2,8 @@
 
 Import your notes from an encrypted [ColorNote](https://www.colornote.com/) backup into Obsidian as plain Markdown, including checklists and locked notes. Everything happens on your device.
 
+![Notes imported from ColorNote in Obsidian: colored notes in the ColorNote folder, an imported checklist with its properties and weekly reminder, and the Note Pin notes list on the right](docs/images/overview.png)
+
 ## Features
 
 - **Reads the encrypted backup file directly.** Pick the `.backup` file, type your master password, choose a folder. You don't need the ColorNote app, an online account or a converter.
@@ -37,7 +39,17 @@ Import your notes from an encrypted [ColorNote](https://www.colornote.com/) back
 5. Check the summary: active notes, notes in the trash, checklists, locked notes, and notes that are already in your vault.
 6. Choose the **destination folder** and options, then select **Import**.
 
+| Choose the backup and decrypt it | Check the summary and import |
+|---|---|
+| ![The Import ColorNote backup dialog with a backup file chosen and the master password entered](docs/images/import-dialog.png) | ![The summary of a decrypted backup with the destination folder and import options](docs/images/review-dialog.png) |
+
 Closing the dialog while notes are being written stops the import after the current note. To finish it, import again with **Skip notes that are already in the vault** turned on.
+
+The importer works the same way in Obsidian on your phone:
+
+| Choose the backup | Check the summary | The imported notes | An imported note |
+|---|---|---|---|
+| ![The import dialog on Android with a backup file chosen and the master password entered](docs/images/mobile-import-dialog.png) | ![The summary of a decrypted backup and the import options on Android](docs/images/mobile-review-dialog.png) | ![The file explorer on Android with the imported notes, colored by Note Pin](docs/images/mobile-explorer.png) | ![An imported checklist on Android with its weekly reminder and properties](docs/images/mobile-note.png) |
 
 ## What a note looks like
 
@@ -182,9 +194,10 @@ The tests use synthetic backups in [`test/fixtures`](test/fixtures). They contai
 
 ## Support
 
-Made by [vladmas](https://vladmas.com). If you like this plugin, you can support me on Ko-fi:
+Made by [vladmas](https://vladmas.com). If you like this plugin, you can <a href="https://ko-fi.com/vladmas">support me on Ko-fi</a>.
 
-[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/vladmas)
+<a href="https://ko-fi.com/vladmas"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"></a>
+<a href="https://ko-fi.com/vladmas">Support me on Ko-fi</a>
 
 ## Disclaimer
 
