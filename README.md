@@ -197,7 +197,6 @@ The tests use synthetic backups in [`test/fixtures`](test/fixtures). They contai
 Made by [vladmas](https://vladmas.com). If you like this plugin, you can <a href="https://ko-fi.com/vladmas">support me on Ko-fi</a>.
 
 <a href="https://ko-fi.com/vladmas"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"></a>
-<a href="https://ko-fi.com/vladmas">Support me on Ko-fi</a>
 
 ## Disclaimer
 
